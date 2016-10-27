@@ -1,0 +1,89 @@
+nav ul {
+	list-style: none;
+	text-align: center;
+	margin: 0 auto;
+	width: 90%;
+	background-color: white;
+	clear: all;
+}
+
+nav li {
+	display: inline-block;
+	height: 20px;
+	margin: 20px;
+	line-height: 20px;
+	font-size: 1.5em;
+}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	color: black;
+}
+
+.background {
+	background-image: url(../images/background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	padding-top: 5%;
+	padding-bottom: 30%;
+	margin: 0 auto;
+}
+
+.background h1 {
+	color: white;
+	font-size: 78px;
+	text-align: center;
+	letter-spacing: 8px;
+	margin: 0 auto;
+	padding-top: 2%;
+}
+
+.social {
+	margin-top: 9%;
+	text-align: center;
+	letter-spacing: 40px;
+}
+
+#about {
+	text-align: center;
+	padding-bottom: 4%;
+	padding-top: 2%;
+
+}
+
+#about h1 {
+	padding-top: 2%;
+	padding-bottom: 1%;
+	font-size: 40px;
+}
+
+#about p {
+	padding-bottom: 2%;
+}
+
+#resume h1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+#projects h1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+#contact h1 {
+	font-size: 40px;
+	text-align: center;
+}
+
+form {
+	margin: 0 auto;
+	text-align: center;
+}
+
+label, textarea {
+	display: block;
+	margin: 0 auto;
+}
