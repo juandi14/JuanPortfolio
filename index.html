@@ -3,18 +3,38 @@
 <head>
 	<title>Juan Henao</title>
 	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 </head>
 <body>
+	<header>
+		<nav class="nav-desktop">
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#resume">RESUME</a></li>
+				<li><a href="#projects">PROJECTS</a></li>
+				<li><a href="#contact">CONTACT ME</a></li>
+			</ul>
+		</nav>
 
-	<nav>
-		<ul>
-			<li><a href="#about">ABOUT</a></li>
-			<li><a href="#resume">RESUME</a></li>
-			<li><a href="#projects">PROJECTS</a></li>
-			<li><a href="#contact">CONTACT ME</a></li>
-		</ul>
-	</nav>
+		<div class="hamburger">
+			<div class="line"></div>
+			<div class="line"></div>
+			<div class="line"></div>
+		</div>
 
+		<div id="dropdown">
+			<nav class="nav-mobile">
+				<ul>
+					<li><a href="#about">ABOUT</a></li>
+					<li><a href="#resume">RESUME</a></li>
+					<li><a href="#projects">PROJECTS</a></li>
+					<li><a href="#contact">CONTACT ME</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
 	<div class="background">
 		<h1>Juan Henao</h1>
 		<div class="social">
@@ -33,37 +53,58 @@
 	</div>
 
 	<div id="resume">
-		<h1>RESUME</h1>
+		<h1>VIEW MY RESUME</h1>
+		<a href="#"><img class="reveal" src="images/downarrow.png"></a>
+		<div class="resume-text">
+			<h2>Education</h2>
+			<p>General Assembly. Atlanta, GA</p>
+			<p class="title">Front End Web Development (FEWD)</p>
+			<p>2016-2016</p>
+			<p>Kennesaw State University. Kennesaw, GA</p>
+			<p class="title">Bachelor of Business Administration, International Business</p>
+			<p>2009-2013</p><br>
+			<h2>Experience</h2>
+			<p>Mitsubishi Motors N.A., Lithia Springs, GA</p>
+			<p class="title">Shipping/Receiving Processor</p>
+			<p>October 2014 - Present</p>
+			<p>Suzuki Motor of America, Marietta, GA</p>
+			<p class="title">Order Processor</p>
+			<p>March 2012 - October 2014</p><br>
+			<h2>Skills</h2>
+			<p>Creating websites using HTML and CSS</p>
+			<p>Making websites responsive using Media Queries</p>
+			<p>Using Jquery to make websites interactive</p>
+			<p>Native Spanish speaker</p><br>
+		</div>
 	</div>
-
 
 	<div id="projects">
 		<h1>PROJECTS</h1>
+		<p>I am still learning the craft of Web Development...</p>
+		<p>Check back periodically to get a glimpse of all the projects I have completed</p>
 	</div>
 
 	<div id="contact">
 		<h1>CONTACT ME</h1>
 		<form>
 			<label for="name">Name:</label>
-			<input type="text" name="name" placeholder="Name">
+			<input type="text" name="name" placeholder="Name"><br><br>
 			<label for="email">Email:</label>
-  			<input type="email" name="email" placeholder="Email">
+  			<input type="email" name="email" placeholder="Email"><br><br>
   			<label for="message">Your Message:</label>
-  			<textarea name="message"></textarea>
+  			<textarea name="message"></textarea><br>
   			<button type="submit">SEND</button>
 		</form>
 	</div>
 
+	<a href="#" class="scroll-up">
+	<img src="images/arrowup.png" alt="scroll up">
+	</a>
+
 	<footer>
-		
-		
+		<h3>Designed & Developed by Juan Henao</h3>
 	</footer>
 
-
-
-
-
-	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 </body>

@@ -1,4 +1,4 @@
-nav ul {
+.nav-desktop ul {
 	list-style: none;
 	text-align: center;
 	margin: 0 auto;
@@ -7,7 +7,7 @@ nav ul {
 	clear: all;
 }
 
-nav li {
+.nav-desktop li {
 	display: inline-block;
 	height: 20px;
 	margin: 20px;
@@ -15,7 +15,7 @@ nav li {
 	font-size: 1.5em;
 }
 
-nav a {
+.nav-desktop a {
 	text-decoration: none;
 	display: block;
 	color: black;
@@ -50,17 +50,32 @@ nav a {
 	text-align: center;
 	padding-bottom: 4%;
 	padding-top: 2%;
-
+	background-image: url(../images/about.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	opacity: 0.9;
+	border: 1px solid black;
 }
 
 #about h1 {
-	padding-top: 2%;
 	padding-bottom: 1%;
 	font-size: 40px;
 }
 
 #about p {
-	padding-bottom: 2%;
+	padding-bottom: 1%;
+	line-height: 20px;
+}
+
+#resume {
+	text-align: center;
+	background-color: white; 
+	padding-top: 1%;
+}
+
+#resume p {
+	line-height: 10px;
 }
 
 #resume h1 {
@@ -68,9 +83,40 @@ nav a {
 	text-align: center;
 }
 
+.reveal {
+	padding-bottom: 2%;
+}
+
+.resume-text {
+	display: none;
+	background-image: url(../images/resume.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	opacity: 0.8;
+	border: 1px solid black;
+	padding-bottom: 1%;
+}
+
+.title {
+	font-style: italic;
+}
+
+#projects {
+	text-align: center;
+	padding-bottom: 9%;
+	padding-top: 2%;
+	background-image: url(../images/keyboard.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	opacity: 0.8;
+}
+
 #projects h1 {
 	font-size: 40px;
 	text-align: center;
+	padding-bottom: 2%;
 }
 
 #contact h1 {
@@ -86,4 +132,53 @@ form {
 label, textarea {
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 1%;
+	font-size: 20px;
+}
+
+input, textarea {
+	width: 50%;
+	padding: 2%;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid silver;
+
+}
+
+button {
+	padding: 2%;
+	margin-top: 20px;
+	width: 15%;
+	border: 2px solid;
+	color: white;
+	background-color: black;
+	font-size: 24px;
+}
+
+footer {
+	text-align: center;
+	padding-top: 3%;
+	clear: all;
+	color: black;
+
+
+}
+
+.scroll-up {
+	position: fixed;	
+	top: 90%;
+	right: 3%;
+	
+}
+
+
+
+#dropdown {
+	display: none;
+}
+
+@media screen and (max-width : 768px) {
+
+.nav-desktop {
+	display: none;
 }
