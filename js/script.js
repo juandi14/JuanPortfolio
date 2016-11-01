@@ -5,9 +5,12 @@ $(document).ready(function() {
     	$(".resume-text").slideToggle();
     	})
 
-     // $(".mobile-menu").click(function() {
-   //         $("#dropdown").slideToggle();
-   //    }
-   //);
+    $(".hamburger").click(function() {
+        $("#dropdown").slideToggle();
+   	   }
+   );
 
+    $(".scroll-up").click(function() {
+    	$("html, body").animate({scrollTop: 0}, "slow");
+    })
 }); 
