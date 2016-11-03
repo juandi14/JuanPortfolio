@@ -26,13 +26,17 @@ body {
 	font-weight: 700;
 }
 
+.nav-desktop a:hover {
+	color: #ef6b07;
+}
+
 .background {
 	background-image: url(../images/background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
 	padding-top: 5%;
-	padding-bottom: 30%;
+	padding-bottom: 12%;
+	position: relative;
 	margin: 0 auto;
 }
 
@@ -42,18 +46,20 @@ body {
 	text-align: center;
 	letter-spacing: 8px;
 	margin: 0 auto;
-	padding-top: 2%;
+	padding-top: 4%;
 	font-weight: 700;
 }
 
 .social {
-	margin-top: 9%;
+	padding-top: 20%;
+	padding-bottom: 1%;
 	text-align: center;
 	letter-spacing: 40px;
 }
 
 .social img:hover {
-	background-color: orange;
+	background-color: #ef6b07;
+	border-radius: 45px;
 }
 
 #about {
@@ -186,7 +192,6 @@ input, textarea {
 	font-size: 16px;
 	font-family: Advent Pro, sans-serif;
 	font-weight: 700;
-
 }
 
 button {
@@ -200,28 +205,48 @@ button {
 	font-family: Advent Pro, sans-serif;
 	font-weight: 700;
 	cursor: pointer;
+	margin-bottom: 3%;
 }
 
 button:hover {
-	color: orange;
+	color: #ef6b07;
 }
 
 footer {
 	text-align: center;
 	padding-top: 3%;
 	clear: all;
-	color: black;
+	color: white;
+	background-color: black;
 }
 
 footer h3 {
 	font-family: Advent Pro, sans-serif;
 	font-weight: 700;
+	padding-bottom: 1%;
 }
+
+.social-bottom {
+	margin-top: 1%;
+	text-align: center;
+	letter-spacing: 40px;
+	margin-bottom: 3%;
+}
+
+.social-bottom img:hover {
+	background-color: #ef6b07;
+	border-radius: 45px; 
+}
+
 .scroll-up {
 	position: fixed;	
-	top: 90%;
+	top: 86%;
 	right: 3%;
-	background-color: transparent;
+}
+
+.scroll-up img:hover {
+	background-color: #ef6b07;
+	border-radius: 38px;
 }
 
 #dropdown {
@@ -229,10 +254,8 @@ footer h3 {
 }
 
 
+@media only screen and (max-width: 768px) {
 
-
-
-@media screen and (max-width : 768px) {
 
 .nav-desktop {
 	display: none;
@@ -247,7 +270,7 @@ footer h3 {
 }
 
 #dropdown a:hover {
-	color: orange;
+	color: #ef6b07;
 }
 
 #dropdown li {
@@ -328,4 +351,8 @@ label, textarea {
 button {
 	font-size: 24px;
 	width: 30%;
+}
+
+.social-bottom {
+	letter-spacing: 25px;
 }

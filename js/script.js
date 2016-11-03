@@ -16,7 +16,7 @@ $(document).ready(function() {
 
 	$(document).scroll(function() {
 	  var y = $(this).scrollTop();
-	  if (y > 280) {
+	  if (y >280) {
 	    $('.scroll-up').fadeIn();
 	  } else {
 	    $('.scroll-up').fadeOut();
