@@ -5,6 +5,11 @@ $(document).ready(function() {
     	$(".resume-text").toggle("slow");
     	})
 
+    $(".hide").click(function() {
+        event.preventDefault();
+        $(".resume-text").fadeOut("slow");
+    })
+
     $(".hamburger").click(function() {
         $("#dropdown").toggle("slow");
    	   }
