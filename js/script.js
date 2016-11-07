@@ -2,16 +2,16 @@ $(document).ready(function() {
 
     $(".reveal").click(function() {
     	event.preventDefault();
-    	$(".resume-text").toggle("slow");
+    	$(".resume-text").fadeToggle("slow");
     	})
 
     $(".hide").click(function() {
         event.preventDefault();
-        $(".resume-text").fadeOut("slow");
+        $(".resume-text").slideToggle("slow");
     })
 
     $(".hamburger").click(function() {
-        $("#dropdown").toggle("slow");
+        $("#dropdown").slideToggle("slow");
    	   }
    );
 
