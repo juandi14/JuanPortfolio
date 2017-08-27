@@ -1,4 +1,10 @@
-nav ul {
+body {
+	font-family: Advent Pro, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+
+.nav-desktop ul {
 	list-style: none;
 	text-align: center;
 	margin: 0 auto;
@@ -7,7 +13,7 @@ nav ul {
 	clear: all;
 }
 
-nav li {
+.nav-desktop li {
 	display: inline-block;
 	height: 20px;
 	margin: 20px;
@@ -15,67 +21,155 @@ nav li {
 	font-size: 1.5em;
 }
 
-nav a {
+.nav-desktop a {
 	text-decoration: none;
 	display: block;
 	color: black;
+	font-weight: 700;
+}
+
+.nav-desktop a:hover {
+	color: #ef6b07;
 }
 
 .background {
 	background-image: url(../images/background.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
-	position: relative;
 	padding-top: 5%;
-	padding-bottom: 30%;
+	padding-bottom: 12%;
+	position: relative;
 	margin: 0 auto;
 }
 
 .background h1 {
 	color: white;
-	font-size: 78px;
+	font-size: 84px;
 	text-align: center;
 	letter-spacing: 8px;
 	margin: 0 auto;
-	padding-top: 2%;
+	padding-top: 4%;
+	font-weight: 700;
 }
 
 .social {
-	margin-top: 9%;
+	padding-top: 20%;
+	padding-bottom: 1%;
 	text-align: center;
 	letter-spacing: 40px;
+}
+
+.social img:hover {
+	background-color: #ef6b07;
+	border-radius: 45px;
 }
 
 #about {
 	text-align: center;
 	padding-bottom: 4%;
 	padding-top: 2%;
-
+	background-image: url(../images/about.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	opacity: 0.9;
+	border: 1px solid black;
 }
 
 #about h1 {
-	padding-top: 2%;
 	padding-bottom: 1%;
-	font-size: 40px;
+	font-size: 48px;
+	font-weight: 700;
 }
 
 #about p {
-	padding-bottom: 2%;
+	padding-bottom: 1%;
+	line-height: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#resume {
+	text-align: center;
+	background-color: white; 
+	padding-top: 1%;
+}
+
+#resume p {
+	line-height: 10px;
 }
 
 #resume h1 {
-	font-size: 40px;
+	font-size: 48px;
 	text-align: center;
+	font-weight: 700;
+}
+
+.reveal {
+	padding-bottom: 3%;
+}
+
+.resume-text {
+	display: none;
+	background-image: url(../images/resume.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: white;
+	opacity: 0.8;
+	border: 1px solid black;
+	margin-bottom: 2%;
+}
+
+.resume-text h2 {
+	padding-bottom: 1%;
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.org {
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.title {
+	font-style: italic;
+	font-size: 20px;
+	font-weight: 400;
+}
+
+.skills {
+	font-size: 18px;
+	font-weight: 700;
+	padding-bottom: 1%;
+}
+
+#projects {
+	text-align: center;
+	padding-bottom: 5%;
+	padding-top: 2%;
+	background-image: url(../images/keyboard.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	opacity: 0.8;
 }
 
 #projects h1 {
-	font-size: 40px;
+	font-size: 48px;
 	text-align: center;
+	padding-bottom: 2%;
+	font-weight: 700;
+}
+
+#projects p {
+	font-weight: 700;
+	font-size: 20px;
 }
 
 #contact h1 {
-	font-size: 40px;
+	font-size: 48px;
 	text-align: center;
+	font-weight: 700;
 }
 
 form {
@@ -86,4 +180,181 @@ form {
 label, textarea {
 	display: block;
 	margin: 0 auto;
+	padding-bottom: 1%;
+	font-size: 24px;
+	font-weight: 700;
+}
+
+input, textarea {
+	width: 50%;
+	padding: 2%;
+	display: block;
+	margin: 0 auto;
+	border: 2px solid black;
+	font-size: 16px;
+	font-family: Advent Pro, sans-serif;
+	font-weight: 700;
+}
+
+button {
+	padding: 2%;
+	margin-top: 20px;
+	width: 15%;
+	border: 2px solid;
+	color: white;
+	background-color: black;
+	font-size: 30px;
+	font-family: Advent Pro, sans-serif;
+	font-weight: 700;
+	cursor: pointer;
+	margin-bottom: 3%;
+}
+
+button:hover {
+	color: #ef6b07;
+}
+
+footer {
+	text-align: center;
+	padding-top: 3%;
+	clear: all;
+	color: white;
+	background-color: black;
+}
+
+footer h3 {
+	font-family: Advent Pro, sans-serif;
+	font-weight: 700;
+	padding-bottom: 1%;
+}
+
+.social-bottom {
+	margin-top: 1%;
+	text-align: center;
+	letter-spacing: 40px;
+	margin-bottom: 3%;
+}
+
+.social-bottom img:hover {
+	background-color: #ef6b07;
+	border-radius: 45px; 
+}
+
+.scroll-up {
+	position: fixed;	
+	top: 86%;
+	right: 3%;
+}
+
+.scroll-up img:hover {
+	background-color: #ef6b07;
+	border-radius: 38px;
+}
+
+#dropdown {
+	display: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+.nav-desktop {
+	display: none;
+}
+
+#dropdown a {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 700;
+	text-align: center;
+}
+
+#dropdown a:hover {
+	color: #ef6b07;
+}
+
+#dropdown li {
+	margin-bottom: 4%;
+}
+
+#dropdown ul:first-child {
+	padding-top: 4%;
+}
+
+.line {
+	background-color: white;
+	border-radius: 4px;
+	height: 5px;
+	width: 45px;
+	margin-bottom: 6px;
+}
+
+.hamburger {
+	float: right;
+	margin-top: 8px;
+	cursor: pointer;
+	margin-right: 14px;
+}
+
+.nav-mobile {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.background h1 {
+	font-size: 60px;
+	text-align: center;
+	padding-top: 16%;
+	padding-bottom: 3%;
+}
+
+#about h1 {
+	font-size: 32px;
+}
+
+#about p {
+	font-size: 16px;
+}
+
+#resume h1 {
+	font-size: 32px;
+}
+
+.org {
+	font-size: 18px;
+}
+
+.title {
+	font-size: 16px;
+}
+
+.skills {
+	font-size: 16px;
+}
+
+#projects h1 {
+	font-size: 32px;
+}
+
+#projects p {
+	font-size: 16px;
+}
+
+#contact h1 {
+	font-size: 32px;
+}
+
+label, textarea {
+	font-size: 18px;
+}
+
+button {
+	font-size: 24px;
+	width: 30%;
+}
+
+.social-bottom {
+	letter-spacing: 25px;
 }
